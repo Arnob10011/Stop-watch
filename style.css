@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.watch--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background: black;
+  color: #fff;
+  width: 500px;
+  border-radius: 8px;
+}
+/* timer */
+.show--timer {
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 0.8rem;
+  padding: 0.7rem 3rem;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  width: 256px;
+}
+
+.time {
+  font-size: 4rem;
+}
+#millisecond {
+  display: flex;
+  align-items: flex-end;
+}
+/* btns */
+.btn--container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 1.6rem;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+}
+
+.btn--start {
+  background: #52b788;
+}
+.btn--start:hover {
+  background: #4ba87d;
+}
+.btn--pause {
+  background: rgb(230, 45, 45);
+}
+.btn--pause:hover {
+  background: rgb(202, 39, 39);
+}
+.btn--lap {
+  background: #f7c249;
+}
+.btn--lap:hover {
+  background: #e0b142;
+}
+.btn--reset {
+  background: #ff6640;
+}
+.btn--reset:hover {
+  background: #ee623f;
+}
+
+/* labs */
+.laps--container {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  height: 170px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.laps--container::-webkit-scrollbar {
+  width: 0;
+}
+
+.lab {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 1.5px;
+}
+
+.labs--content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 200px;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.2s;
+}

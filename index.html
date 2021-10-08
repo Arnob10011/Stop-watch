@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <!-- stop watch -->
+
+    <div class="container">
+      <div class="watch--content">
+        <div class="show--timer">
+          <!-- show Time -->
+          <div id="hour" class="time"><span>00</span>:</div>
+          <div id="min" class="time"><span>00</span>:</div>
+          <div id="second" class="time"><span>00</span>,</div>
+          <div id="millisecond"><span>000</span></div>
+        </div>
+        <!-- btns -->
+        <div class="btn--container">
+          <div class="btn btn--start">Start</div>
+          <div class="btn btn--lap">Lap</div>
+          <div class="btn btn--pause">Pause</div>
+          <div class="btn btn--reset">Reset</div>
+        </div>
+      </div>
+      <!-- show laps -->
+      <div class="laps--container">
+        <div class="labs--content"></div>
+      </div>
+    </div>
+  </body>
+</html>
